@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+	<!--
+	========
+	Code Crew Email framework
+	# Author : Code Crew
+	# URL : https://codecrew.us/
+	# Version : 1.0.0
+	# Last Modified : 2019.02.04
+	========
+	-->
+	<head>
+		<!--[if gt mso 15]><xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml><![endif]-->
+		<title>Sergio D. Gimenez</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+		<style type="text/css">
+			/*OBLIGATORY EMAIL STYLES*/
+			.ReadMsgBody { width:100%; }
+			.ExternalClass { width:100%; }
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+			img { display: block; }
+			
+			body {
+				padding: 0;
+				width: 100% !important;
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+			}
+			
+			/*BYE BYE BLUE LINKS + ORPHAN STYLE*/
+			.appleFooter a {
+				color:#999999 !important;
+				text-decoration: none !important;
+			}
+			
+			.appleLink a {
+				color:#FFFFFF !important;
+				text-decoration: none !important;
+			}
+
+			.padding_top { padding-top: 95px !important; }
+			#outlook a { padding: 0; }
+
+			.ReadMsgBody { width: 100%; }
+			.ExternalClass { width:100%; }
+			
+			.backgroundTable {
+				margin: 0 auto;
+				padding:0;
+				width: 100% !important;
+			}
+			
+			.ExternalClass * { line-height: 115%; }
+			/* End Reset */
+			
+			/* @charset "UTF-8"; // available later */
+			
+			/* CSS Document */
+			table .wrapper_table {
+				background-image: url("tools/bg01.jpg");
+				background-repeat: no-repeat;
+				background-size: 800px;
+				width: 100%;
+				height: 1533.5px;
+			}
+
+			table tr td .HlaLogo {
+				background-image: url("tools/HLALogo.png");
+				background-repeat: no-repeat;
+				background-size: 165px;
+				width: 165px;
+				height: 43px;
+			}
+
+			table tr td .header_NLA_P {
+				background-image: url("tools/HLA_PWm.png");
+				background-repeat: no-repeat;
+				background-size: 530px;
+				width: 530px;
+				height: 840px;
+			}
+
+			.sectP {
+				display: inline-block;
+				width: 210px;
+			}
+
+			table tr td .sect1_1 {
+				background-image: url("tools/HlaW_01.jpg");
+				background-repeat: no-repeat;
+				background-size: 210px;
+				width: 210px;
+				height: 320px;
+			}
+
+			table tr td .sect1_2 {
+				background-image: url("tools/HlaW_02.jpg");
+				background-repeat: no-repeat;
+				background-size: 210px;
+				width: 210px;
+				height: 320px;
+			}
+
+			table tr td .sect1_3 {
+				background-image: url("tools/HlaW_03.jpg");
+				background-repeat: no-repeat;
+				background-size: 210px;
+				width: 210px;
+				height: 320px;
+			}
+
+			.sect_bl {
+				display: inline-block;
+				width: 30px;
+			}
+
+			.sect2_1 {
+				display: inline-block;
+				background-image: url("tools/HlaWm_01.jpg");
+				background-repeat: no-repeat;
+				background-size: 172.5px;
+				width: 172.5px;
+				height: 172.5px;
+			}
+
+			.sect2_2 {
+				display: inline-block;
+				background-image: url("tools/HlaWm_02.jpg");
+				background-repeat: no-repeat;
+				background-size: 172.5px;
+				width: 172.5px;
+				height: 172.5px;
+			}
+
+			.sect2_3 {
+				display: inline-block;
+				background-image: url("tools/HlaWm_03.jpg");
+				background-repeat: no-repeat;
+				background-size: 172.5px;
+				width: 172.5px;
+				height: 172.5px;
+			}
+			
+			.sect2_4 {
+				display: inline-block;
+				background-image: url("tools/HlaWm_04.jpg");
+				background-repeat: no-repeat;
+				background-size: 172.5px;
+				width: 172.5px;
+				height: 172.5px;
+			}
+		
+			/* Framework - EDIT THIS AND SUFFER THE CONSEQUENCES! */
+			.weight_100 { font-weight: 100; }
+			.weight_200 { font-weight: 200; }
+			.weight_300 { font-weight: 300; }
+			.weight_400 { font-weight: 400; }
+			.weight_500 { font-weight: 500; }
+			.weight_600 { font-weight: 600; }
+			.weight_700 { font-weight: 700; }
+			.weight_800 { font-weight: 800; }
+			.weight_900 { font-weight: 900; }
+			.uppercase { text-transform: uppercase; }
+			.underline { text-decoration: underline; }
+			.italic { font-style: italic; }
+			.block { display: block !important; }
+			
+			.space_class {
+				font-size: 1px;
+				line-height: 1px;
+			}
+			
+			/* Almost There, declaring some important things now */
+			body {
+				/*background-color: #EFEFEF;*/
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 14px;
+				color: #979C9F;
+				margin: 0 auto;
+			}
+			
+			a { text-decoration: none; }
+			
+			.desktop_hide {
+				max-height: 0px;
+				font-size: 0;
+				display: none;
+			}
+			
+			.space_class_br {
+				font-size: 0px;
+				line-height: 0px;
+				width: 0px;
+				display: block;
+			}
+			
+			.align_justify {
+				text-align: justify;
+				text-align-last: center;
+			}
+
+			/* Checking */
+			.table tr td { text-align: center; }
+			
+			.br_hide {
+				font-size: 0;
+				display: none;
+				max-height: 0px;
+			}
+			
+			.desktop_hide_img {
+				max-height: 0;
+				width: 0;
+				display: none;
+				visibility: hidden;
+			}
+			/* Old wrapper table deprecated. Will use 2 different classes, one for the standard wrapper table
+			and one for the cases where you have a background image. This is done to massively decrease
+			the size of the email file */
+			
+			.wrapper_table_wt_background {
+				background-size: 100% 100%;
+				background-position: center top;
+				background-repeat: no-repeat;
+				max-width: 800px;
+			}
+			.display_table_cell { display:table-cell !important; }
+
+			/* ADD tool */
+			.bx_Tx { width: 50px; }
+			.secTxt-t1 { font-size: 50px; }
+			.secTxt-t2 { font-size: 35px; }
+			.secTxt-t3 { font-size: 16px; width: 325px; }
+			.secTxt-t4 { font-size: 35px; }
+
+			.secTxt { font-size: 16px; }
+			.secTxt_bn {
+				text-align: left;
+				font-size: 16px;
+				height: 80px;
+			}
+
+			.btn_bn {
+				background-color: #FFFFFF;
+				border: none;
+				padding: 30px;
+				height: 30px;
+			}
+
+			.btn {
+				background-color: #000000;
+				border: none;
+				padding: 0px 40px;
+				height: 55px;
+			}
+
+			.foot-txt a {
+				padding: 0px 22px;
+				font-weight: 600;
+			}
+
+			@media only screen and ( max-width: 375px ) {
+				table .wrapper_table {
+					background-image: url("tools/bg01mob.jpg");
+					background-repeat: no-repeat;
+					background-size: 375px;
+					width: 100%;
+					height: 1210px;
+				}
+			}
+
+			@media only screen and ( max-width: 460px ) {
+				.photograph span { font-size: 55px; }
+
+				table tr td .header_NLA_P {
+					background-repeat: no-repeat;
+					background-size: 350px;
+					width: 350px;
+					height: 557px;
+				}
+
+				.sect_bl {
+					display: none;
+				}
+
+				.secTxt-t1 { font-size: 40px; }
+				.secTxt p { width: 300px; }
+				.secTxt_bn { text-align: center; }
+
+				.sect2_1 {
+					display: block;
+					background-size: 165px;
+					width: 165px;
+					height: 165px;
+				}
+				
+				.sect2_2 {
+					display: block;
+					background-size: 165px;
+					width: 165px;
+					height: 165px;
+				}
+				
+				.sect2_3 {
+					display: block;
+					background-size: 165px;
+					width: 165px;
+					height: 165px;
+				}
+				
+				.sect2_4 {
+					display: block;
+					background-size: 165px;
+					width: 165px;
+					height: 165px;
+				}
+
+				.footCSize { width: 250px; }
+				.sep { display: none; }
+				
+			}
+
+			/* GLOBAL */
+			@media ( max-width: 461px ) {
+				body.responsive {
+					margin: 0 auto !important;
+					width: 100% !important;
+				}
+
+				img {
+					height: auto !important;
+					max-width: 100% !important;
+				}
+
+				img.fullwidth {
+				width: auto !important;
+				max-width: 100% !important;
+				}
+
+				.desktop_hide {
+					display: block !important;
+					max-width: 100% !important;
+					max-height: 100% !important;
+				}
+
+				.br_hide {
+					display: block !important;
+					max-width: 100% !important;
+					max-height: 0 !important;
+				}
+		
+				.lt_0 { letter-spacing: 0px !important; }
+				.lt_01 { letter-spacing: -0.02px !important; }
+				.lt_02 { letter-spacing: -0.06px !important; }
+				.lt_03 { letter-spacing: -0.30px !important; }
+				.lt_04 { letter-spacing: -0.38px !important; }
+				.lt_1 { letter-spacing: -0.50px !important; }
+				.lt_2 { letter-spacing: 0.10px !important; }
+				.lt_3 { letter-spacing: 0.14px !important; }
+				.lt_4 { letter-spacing: 0.4px !important; }
+				.lt_5 { letter-spacing: 0.5px !important; }
+				.lt_6 { letter-spacing: 0.03px !important; }
+				.pr_0 { padding-left: 17px !important; }
+
+
+				/* Width */
+				table .wrapper_table {
+					width: 100% !important;
+					/*background-size:100% 100% !important;*/
+				}
+				
+				table.wrapper_table .content{
+					width: 100% !important;
+					height: auto;
+				}
+
+				table.wrapper_table .se_padding { width: 14px !important; }
+				table.wrapper_table .padding { width: 24px !important; }
+				table.wrapper_table .padding2 { width: 25px !important; }
+				table.wrapper_table .padding3 { width: 27px !important; }
+				table.wrapper_table .padding4 { width: 23px !important; }
+				table.wrapper_table .padding5 { width: 25px !important; }
+				table.wrapper_table .padding6 { width: 34px !important; }
+				table.wrapper_table .padding7 { width: 28px !important; }
+				
+				table.wrapper_table .content_row {
+					/* content == padding + content_row + padding */
+					width: 290px !important;
+				}
+
+				table.wrapper_table .content_row_inner {
+					/* content_row == padding + content_row_inner + padding */
+					width: 260px !important;
+				}
+				
+				/* Position Style */
+				table.wrapper_table .stacked_fullwidth {
+					width: 100%;
+					display: block !important;
+				}
+
+				table.wrapper_table .noborder { border: 0 !important; }
+				table.wrapper_table .nomobile { display: none !important; }
+				.nobg_mobile { background-image: none !important; }
+
+				.mob_justify {
+					text-align: justify;
+					text-align-last: center;
+				}
+				
+				table.wrapper_table .header_group {
+					display: table-header-group !important;
+					margin-bottom: 20px !important;
+				}
+
+				table.wrapper_table .footer_group {
+					display: table-footer-group !important;
+				}
+
+				table.wrapper_table .mob_center {
+					text-align: center !important;
+					margin: 0 auto !important;
+				}
+
+				table.wrapper_table .mob_left {
+					text-align: left !important;
+					margin: 0 auto !important;
+				}
+
+				table.mobile_centered_table {
+					margin: 0 auto !important;
+					text-align: center !important;
+				}
+				
+				/* Height */
+				table.wrapper_table .height_2 { height: 2px; }
+				table.wrapper_table .height_3 { height: 3px; }
+				table.wrapper_table .height_4 { height: 4px; }
+				table.wrapper_table .height_5 { height: 5px; }
+				table.wrapper_table .height_7 { height: 7px; }
+				table.wrapper_table .height_8 { height: 8px; }
+				table.wrapper_table .height_9 { height: 9px; }
+				table.wrapper_table .height_10 { height: 10px; }
+				table.wrapper_table .height_20 { height: 20px; }
+				table.wrapper_table .height_30 { height: 30px; }
+				table.wrapper_table .height_40 { height: 40px; }
+				table.wrapper_table .height_50 { height: 50px; }
+				table.wrapper_table .height_56 { height: 56px; }
+				table.wrapper_table .height_60 { height: 60px; }
+
+				/* Fonts */
+				table.wrapper_table .mob_paragraph { font-size: 15px !important; }
+				table.wrapper_table .mob_paragraph1 { font-size: 20px !important; }
+				table.wrapper_table .mob_paragraph6 { font-size: 16px !important; }
+				
+				/* Line Height */
+				table.wrapper_table .lh_bigheading3 { line-height: 29px !important; }
+				table.wrapper_table .lh_subheading { line-height: 29px !important; }
+				table.wrapper_table .lh_paragraph1 { line-height: 24px !important; }
+				table.wrapper_table .lh_paragraph2 { line-height: 36px !important; }
+				table.wrapper_table .lh_paragraph3 { line-height: 31px !important; }
+				table.wrapper_table .lh_paragraph5 { line-height: 34px !important; }
+			
+				/* Width */
+				table.wrapper_table .mob_w6 { width: 6px; }
+				table.wrapper_table .mob_w13 { width: 13.6px; }
+				table.wrapper_table .mob_w18 { width: 18px; }
+				table.wrapper_table .mob_w70 { width: 70px; }
+				table.wrapper_table .mob_w94 { width: 94px; }
+				table.wrapper_table .mob_w230 { width: 230px; }
+				table.wrapper_table .mob_w250 { width: 250px; }
+				table.wrapper_table .mob_w260 { width: 260px; }
+				table.wrapper_table .mob_w275 { width: 275px; }
+				table.wrapper_table .mob_w282 { width: 282px; }
+				table.wrapper_table .mob_w298 { width: 298px; }
+				table.wrapper_table .mob_w306 { width: 306px; }
+				table.wrapper_table .mob_w314 { width: 310px; }
+				table.wrapper_table .mob_w315 { width: 315px; }
+				table.wrapper_table .mob_w317 { width: 317px; }
+				table.wrapper_table .mob_w318 { width: 318px; }
+				table.wrapper_table .mob_w321 { width: 321px; }
+				table.wrapper_table .mob_w322 { width: 322px; }
+			}
+
+			/* IPHONE 5SE */
+			@media only screen and ( min-width: 320px ) and ( max-height: 568px ) {
+				table .wrapper_table .padding4 { width: 23px !important; }
+				table .wrapper_table .se_font_12 { font-size: 12px !important; }
+				table .wrapper_table .padding3 { width: 20px !important; }
+				table .wrapper_table .no_se { display: none !important; }
+			}
+			
+			/* It's safe now, you can start editing. */
+			/* Add title font */
+			@font-face { font-family: Photograph; src: url("tools/PhotographSignature.ttf"); }
+
+			@font-face { font-family: OpenSans-Bold; src: url("tools/OpenSans-Bold.ttf"); }
+			@font-face { font-family: OpenSans-Light; src: url("tools/OpenSans-Light.ttf"); }
+			@font-face { font-family: OpenSans-Medium; src: url("tools/OpenSans-Medium.ttf"); }
+			@font-face { font-family: OpenSans-Regular; src: url("tools/OpenSans-Regular.ttf"); }
+			
+			.photograph { font-family: 'Photograph'; font-size: 85px; }
+
+			.openSans-Bold { font-family: 'OpenSans-Bold'; }
+			.openSans-Light { font-family: 'OpenSans-Light'; }
+			.openSans-Medium { font-family: 'OpenSans-Medium'; }
+			.openSans-Regular { font-family: 'OpenSans-Regular'; }
+			/*---*/
+
+			.roboto_cond { font-family: 'Roboto Condensed', sans-serif; }
+			.merri { font-family: 'Merriweather', serif; }
+			.helv { font-family: 'Helvetica' , sans-serif; }
+			.montserrat { font-family: 'Montserrat', sans-serif; }
+			
+			.whitetext { color: #FFFFFF; }
+			.blacktext { color: #1A1819; }
+			.redtext { color: #CC4B35; }
+			.browntext { color: #5F3721; }
+			
+			.yellowbg { background-color: #E4D7C6; }
+			.blackbg { background-color: #1A1819; }
+		</style>
+	</head>
+	
+	<body>
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td style="text-decoration: none; font-size: 0px; line-height: 0px; height:0px; color:#FFFFFF;">
+					Preheader
+				</td>
+				<td style="display: none; max-height: 0px; overflow: hidden;">
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+				</td>
+			</tr>
+		</table>
+
+		<table
+			cellpadding="0"
+			cellspacing="0"
+			width="100%"
+		>
+			<tr>
+				<td valign="top" align="center">
+					<!--Background-->
+					<table
+						class="wrapper_table"
+						cellpadding="0"
+						cellspacing="0"
+						style="table-layout: fixed; max-width: 800px;"
+					>
+					<tr>
+						<td class="content" align="center" valign="top">
+							<!--Content header-->
+							<table cellpadding="0" cellspacing="0">
+								<tr><td height="55px"></td></tr>
+								<tr><td align="center"><div class="HlaLogo"></div></td></tr>
+
+								<tr><td height="115px"></td></tr>
+								<tr><td class="blacktext openSans-Bold secTxt-t1" align="center">Have You Seen</td></tr>
+								<tr><td align="center" class="photograph browntext"><span>These New Styles?</span></td></tr>
+
+								<tr><td align="center"><div class="header_NLA_P"></div></td></tr>
+								<tr>
+									<td class="blacktext openSans-Regular secTxt" align="center" width="390px">
+										<p>Hey [FNAME/there], we notice you haven't ordered in a while. We have some new looks we think your customers will love.</p>
+									</td>
+								</tr>
+								<tr><td align="center"><button class="btn whitetext openSans-Bold">SHOP NEW RELEASES</button></td></tr>
+								<tr height="75px"><td></td></tr>
+							</table>
+							<!--Content section-->
+							<table>
+								<tr><td height="90px"></td></tr>
+								<tr><td class="blacktext openSans-Bold secTxt-t4" align="center"><span>Create Your Next</span></td></tr>
+								<tr><td class="blacktext openSans-Light secTxt-t2" align="center"><span>Winning Collection</span></td></tr>
+								<tr>
+									<td class="blacktext openSans-Regular secTxt-t3" align="center">
+										<p>Turn browsers into buyers with these popular new styles:</p>
+									</td>
+								</tr>
+								<tr><td height="40px"></td></tr>
+							</table>
+
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center">
+										<div class="sectP">
+											<div class="sect1_1"></div>
+											<div class="secTxt_bn openSans-Regular"><p>Girls Button Down Peplum Western Tencel Shirt (GY2570 Light Denin Pack)</p></div>
+											<button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button>
+										</div>
+										
+										<div class="sect_bl"></div>
+
+										<div class="sectP">
+											<div class="sect1_2"></div>
+											<div class="secTxt_bn openSans-Regular"><p>Plus Floral Print V Neck Smock Waist Tiered Mini Dress</p></div>
+											<button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button>
+										</div>
+										
+										<div class="sect_bl"></div>
+										
+										<div class="sectP">
+											<div class="sect1_3"></div>
+											<div class="secTxt_bn openSans-Regular"><p>Womens Floral Tiered Midi Skirt (HY2242 Black Pack)</p></div>
+											<button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button>
+										</div>
+									</td>
+								</tr>
+							</table>
+
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="blacktext openSans-Regular secTxt" align="center" width="390px">
+										<p>You know your customers best, so you can order 1 pack per style to test the waters or go all-in  with a large order, it's up to you.</p>
+									</td>
+								</tr>
+
+								<tr height="50px"><td></td></tr>
+								<tr><td align="center"><button class="btn whitetext openSans-Bold">ORDER NOW</button></td></tr>
+								<tr height="50px"><td></td></tr>
+							</table>
+
+							<!--Content section2-->
+							<table cellpadding="0" cellspacing="0">
+								<tr><td height="50px"></td></tr>
+								<tr><td align="center" class="HlaLogo" height="42px"></td></tr>
+								<tr><td height="42px"></td></tr>
+							</table>
+
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<div class="sect2_1"></div>
+										<div class="sect2_2"></div>
+									</td>
+									<td>
+										<div class="sect2_3"></div>
+										<div class="sect2_4"></div>
+									</td>
+								</tr>
+							</table>
+
+							<!--Content footer-->
+							<table cellpadding="0" cellspacing="0">
+								<tr><td height="30px"></td></tr>
+								<tr>
+									<td class="foot-txt" align="center">
+										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/collections/tops">EXCLUSIVES</a><span>|</span>
+										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/collections/sale-1">SALE</a><span>|</span>
+										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/pages/our-story">ABOUT US</a><span class="sep">|</span>
+										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/pages/contact-us">CONTACT US</a><span>|</span>
+										<a class="blacktext openSans-Regular" href="https://customers.haydenla.com/scs/checkout.ssp?is=login&login=T#login-register">UNSUBSCRIBE</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="openSans-Regular" align="center">
+										<p class="footCSize">Copyright © 2022 Hayden Los Angeles <span class="sep">-</span> All rights reserved</p>
+									</td>
+								</tr>
+
+								<tr><td height="70px"></td></tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
