@@ -1,29 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-	<!--
-	========
-	Code Crew Email framework
-	# Author : Code Crew
-	# URL : https://codecrew.us/
-	# Version : 1.0.0
-	# Last Modified : 2019.02.04
-	========
-	-->
 	<head>
-		<!--[if gt mso 15]><xml>
-		<o:OfficeDocumentSettings>
-		<o:AllowPNG/>
-		<o:PixelsPerInch>96</o:PixelsPerInch>
-		</o:OfficeDocumentSettings>
-		</xml><![endif]-->
-		<title>Sergio D. Gimenez</title>
+		<title>Hayden Site</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="format-detection" content="telephone=no"/>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 		<style type="text/css">
-			/*OBLIGATORY EMAIL STYLES*/
 			.ReadMsgBody { width:100%; }
 			.ExternalClass { width:100%; }
 			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
@@ -61,8 +45,6 @@
 			
 			.ExternalClass * { line-height: 115%; }
 			/* End Reset */
-			
-			/* @charset "UTF-8"; // available later */
 			
 			/* CSS Document */
 			table .wrapper_table {
@@ -158,21 +140,6 @@
 				width: 172.5px;
 				height: 172.5px;
 			}
-		
-			/* Framework - EDIT THIS AND SUFFER THE CONSEQUENCES! */
-			.weight_100 { font-weight: 100; }
-			.weight_200 { font-weight: 200; }
-			.weight_300 { font-weight: 300; }
-			.weight_400 { font-weight: 400; }
-			.weight_500 { font-weight: 500; }
-			.weight_600 { font-weight: 600; }
-			.weight_700 { font-weight: 700; }
-			.weight_800 { font-weight: 800; }
-			.weight_900 { font-weight: 900; }
-			.uppercase { text-transform: uppercase; }
-			.underline { text-decoration: underline; }
-			.italic { font-style: italic; }
-			.block { display: block !important; }
 			
 			.space_class {
 				font-size: 1px;
@@ -181,7 +148,6 @@
 			
 			/* Almost There, declaring some important things now */
 			body {
-				/*background-color: #EFEFEF;*/
 				font-family: 'Roboto Condensed', sans-serif;
 				font-size: 14px;
 				color: #979C9F;
@@ -223,9 +189,6 @@
 				display: none;
 				visibility: hidden;
 			}
-			/* Old wrapper table deprecated. Will use 2 different classes, one for the standard wrapper table
-			and one for the cases where you have a background image. This is done to massively decrease
-			the size of the email file */
 			
 			.wrapper_table_wt_background {
 				background-size: 100% 100%;
@@ -358,48 +321,22 @@
 					max-width: 100% !important;
 					max-height: 0 !important;
 				}
-		
-				.lt_0 { letter-spacing: 0px !important; }
-				.lt_01 { letter-spacing: -0.02px !important; }
-				.lt_02 { letter-spacing: -0.06px !important; }
-				.lt_03 { letter-spacing: -0.30px !important; }
-				.lt_04 { letter-spacing: -0.38px !important; }
-				.lt_1 { letter-spacing: -0.50px !important; }
-				.lt_2 { letter-spacing: 0.10px !important; }
-				.lt_3 { letter-spacing: 0.14px !important; }
-				.lt_4 { letter-spacing: 0.4px !important; }
-				.lt_5 { letter-spacing: 0.5px !important; }
-				.lt_6 { letter-spacing: 0.03px !important; }
-				.pr_0 { padding-left: 17px !important; }
-
 
 				/* Width */
 				table .wrapper_table {
 					width: 100% !important;
-					/*background-size:100% 100% !important;*/
 				}
 				
 				table .wrapper_table .content{
 					width: 100% !important;
 					height: auto;
 				}
-
-				table.wrapper_table .se_padding { width: 14px !important; }
-				table.wrapper_table .padding { width: 24px !important; }
-				table.wrapper_table .padding2 { width: 25px !important; }
-				table.wrapper_table .padding3 { width: 27px !important; }
-				table.wrapper_table .padding4 { width: 23px !important; }
-				table.wrapper_table .padding5 { width: 25px !important; }
-				table.wrapper_table .padding6 { width: 34px !important; }
-				table.wrapper_table .padding7 { width: 28px !important; }
 				
 				table.wrapper_table .content_row {
-					/* content == padding + content_row + padding */
 					width: 290px !important;
 				}
 
 				table.wrapper_table .content_row_inner {
-					/* content_row == padding + content_row_inner + padding */
 					width: 260px !important;
 				}
 				
@@ -412,95 +349,8 @@
 				table.wrapper_table .noborder { border: 0 !important; }
 				table.wrapper_table .nomobile { display: none !important; }
 				.nobg_mobile { background-image: none !important; }
-
-				.mob_justify {
-					text-align: justify;
-					text-align-last: center;
-				}
-				
-				table.wrapper_table .header_group {
-					display: table-header-group !important;
-					margin-bottom: 20px !important;
-				}
-
-				table.wrapper_table .footer_group {
-					display: table-footer-group !important;
-				}
-
-				table.wrapper_table .mob_center {
-					text-align: center !important;
-					margin: 0 auto !important;
-				}
-
-				table.wrapper_table .mob_left {
-					text-align: left !important;
-					margin: 0 auto !important;
-				}
-
-				table.mobile_centered_table {
-					margin: 0 auto !important;
-					text-align: center !important;
-				}
-				
-				/* Height */
-				table.wrapper_table .height_2 { height: 2px; }
-				table.wrapper_table .height_3 { height: 3px; }
-				table.wrapper_table .height_4 { height: 4px; }
-				table.wrapper_table .height_5 { height: 5px; }
-				table.wrapper_table .height_7 { height: 7px; }
-				table.wrapper_table .height_8 { height: 8px; }
-				table.wrapper_table .height_9 { height: 9px; }
-				table.wrapper_table .height_10 { height: 10px; }
-				table.wrapper_table .height_20 { height: 20px; }
-				table.wrapper_table .height_30 { height: 30px; }
-				table.wrapper_table .height_40 { height: 40px; }
-				table.wrapper_table .height_50 { height: 50px; }
-				table.wrapper_table .height_56 { height: 56px; }
-				table.wrapper_table .height_60 { height: 60px; }
-
-				/* Fonts */
-				table.wrapper_table .mob_paragraph { font-size: 15px !important; }
-				table.wrapper_table .mob_paragraph1 { font-size: 20px !important; }
-				table.wrapper_table .mob_paragraph6 { font-size: 16px !important; }
-				
-				/* Line Height */
-				table.wrapper_table .lh_bigheading3 { line-height: 29px !important; }
-				table.wrapper_table .lh_subheading { line-height: 29px !important; }
-				table.wrapper_table .lh_paragraph1 { line-height: 24px !important; }
-				table.wrapper_table .lh_paragraph2 { line-height: 36px !important; }
-				table.wrapper_table .lh_paragraph3 { line-height: 31px !important; }
-				table.wrapper_table .lh_paragraph5 { line-height: 34px !important; }
-			
-				/* Width */
-				table.wrapper_table .mob_w6 { width: 6px; }
-				table.wrapper_table .mob_w13 { width: 13.6px; }
-				table.wrapper_table .mob_w18 { width: 18px; }
-				table.wrapper_table .mob_w70 { width: 70px; }
-				table.wrapper_table .mob_w94 { width: 94px; }
-				table.wrapper_table .mob_w230 { width: 230px; }
-				table.wrapper_table .mob_w250 { width: 250px; }
-				table.wrapper_table .mob_w260 { width: 260px; }
-				table.wrapper_table .mob_w275 { width: 275px; }
-				table.wrapper_table .mob_w282 { width: 282px; }
-				table.wrapper_table .mob_w298 { width: 298px; }
-				table.wrapper_table .mob_w306 { width: 306px; }
-				table.wrapper_table .mob_w314 { width: 310px; }
-				table.wrapper_table .mob_w315 { width: 315px; }
-				table.wrapper_table .mob_w317 { width: 317px; }
-				table.wrapper_table .mob_w318 { width: 318px; }
-				table.wrapper_table .mob_w321 { width: 321px; }
-				table.wrapper_table .mob_w322 { width: 322px; }
 			}
 
-			/* IPHONE 5SE */
-			@media only screen and ( min-width: 320px ) and ( max-height: 568px ) {
-				table .wrapper_table .padding4 { width: 23px !important; }
-				table .wrapper_table .se_font_12 { font-size: 12px !important; }
-				table .wrapper_table .padding3 { width: 20px !important; }
-				table .wrapper_table .no_se { display: none !important; }
-			}
-			
-			/* It's safe now, you can start editing. */
 			/* Add title font */
 			@font-face { font-family: Photograph; src: url("tools/PhotographSignature.ttf"); }
 
@@ -516,11 +366,6 @@
 			.openSans-Medium { font-family: 'OpenSans-Medium'; }
 			.openSans-Regular { font-family: 'OpenSans-Regular'; }
 			/*---*/
-
-			.roboto_cond { font-family: 'Roboto Condensed', sans-serif; }
-			.merri { font-family: 'Merriweather', serif; }
-			.helv { font-family: 'Helvetica' , sans-serif; }
-			.montserrat { font-family: 'Montserrat', sans-serif; }
 			
 			.whitetext { color: #FFFFFF; }
 			.blacktext { color: #1A1819; }
@@ -533,33 +378,6 @@
 	</head>
 	
 	<body>
-		<table cellpadding="0" cellspacing="0" width="100%">
-			<tr>
-				<td style="text-decoration: none; font-size: 0px; line-height: 0px; height:0px; color:#FFFFFF;">
-					Preheader
-				</td>
-				<td style="display: none; max-height: 0px; overflow: hidden;">
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
-					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-				</td>
-			</tr>
-		</table>
-
 		<table
 			cellpadding="0"
 			cellspacing="0"
@@ -591,7 +409,7 @@
 										<p>Hey [FNAME/there], we notice you haven't ordered in a while. We have some new looks we think your customers will love.</p>
 									</td>
 								</tr>
-								<tr><td align="center"><a href="https://ws.haydenla.com/pages/registration-survey"><button class="btn whitetext openSans-Bold">SHOP NEW RELEASES</button></a></td></tr>
+								<tr><td align="center"><a href="#"><button class="btn whitetext openSans-Bold">SHOP NEW RELEASES</button></a></td></tr>
 								<tr height="75px"><td></td></tr>
 							</table>
 							<!--Content section-->
@@ -613,7 +431,7 @@
 										<div class="sectP">
 											<div class="sect1_1"></div>
 											<div class="secTxt_bn openSans-Regular"><p>Girls Button Down Peplum Western Tencel Shirt (GY2570 Light Denin Pack)</p></div>
-											<a href="https://ws.haydenla.com/pages/registration-survey"><button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button></a>
+											<a href="#"><button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button></a>
 										</div>
 										
 										<div class="sect_bl"></div>
@@ -621,7 +439,7 @@
 										<div class="sectP">
 											<div class="sect1_2"></div>
 											<div class="secTxt_bn openSans-Regular"><p>Plus Floral Print V Neck Smock Waist Tiered Mini Dress</p></div>
-											<a href="https://ws.haydenla.com/pages/registration-survey"><button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button></a>
+											<a href="#"><button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button></a>
 										</div>
 										
 										<div class="sect_bl"></div>
@@ -629,7 +447,7 @@
 										<div class="sectP">
 											<div class="sect1_3"></div>
 											<div class="secTxt_bn openSans-Regular"><p>Womens Floral Tiered Midi Skirt (HY2242 Black Pack)</p></div>
-											<a href="https://ws.haydenla.com/pages/registration-survey"><button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button></a>
+											<a href="#"><button class="btn_bn blacktext openSans-Bold">BUY NOW ►</button></a>
 										</div>
 									</td>
 								</tr>
@@ -643,14 +461,14 @@
 								</tr>
 
 								<tr height="50px"><td></td></tr>
-								<tr><td align="center"><a href="https://ws.haydenla.com/pages/registration-survey"><button class="btn whitetext openSans-Bold">ORDER NOW</button></a></td></tr>
+								<tr><td align="center"><a href="#"><button class="btn whitetext openSans-Bold">ORDER NOW</button></a></td></tr>
 								<tr height="50px"><td></td></tr>
 							</table>
 
 							<!--Content section2-->
 							<table cellpadding="0" cellspacing="0">
 								<tr><td height="50px"></td></tr>
-								<tr><td align="center" height="42px"><a href="https://ws.haydenla.com/"><div class="HlaLogo"></div></a></td></tr>
+								<tr><td align="center" height="42px"><a href="#"><div class="HlaLogo"></div></a></td></tr>
 								<tr><td height="42px"></td></tr>
 							</table>
 
@@ -672,11 +490,11 @@
 								<tr><td height="30px"></td></tr>
 								<tr>
 									<td class="foot-txt" align="center">
-										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/collections/tops">EXCLUSIVES</a><span>|</span>
-										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/collections/sale-1">SALE</a><span>|</span>
-										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/pages/our-story">ABOUT US</a><span class="sep">|</span>
-										<a class="blacktext openSans-Regular" href="https://ws.haydenla.com/pages/contact-us">CONTACT US</a><span>|</span>
-										<a class="blacktext openSans-Regular" href="https://customers.haydenla.com/scs/checkout.ssp?is=login&login=T#login-register">UNSUBSCRIBE</a>
+										<a class="blacktext openSans-Regular" href="#">EXCLUSIVES</a><span>|</span>
+										<a class="blacktext openSans-Regular" href="#">SALE</a><span>|</span>
+										<a class="blacktext openSans-Regular" href="#">ABOUT US</a><span class="sep">|</span>
+										<a class="blacktext openSans-Regular" href="#">CONTACT US</a><span>|</span>
+										<a class="blacktext openSans-Regular" href="#">UNSUBSCRIBE</a>
 									</td>
 								</tr>
 								<tr>
